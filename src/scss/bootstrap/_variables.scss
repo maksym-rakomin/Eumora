@@ -7,6 +7,7 @@
 
 $tranparent:    transparent;
 $white:    #fff !default;
+$white-f4:    #F4F1EA !default;
 $light-gray:    #f2f2f2 !default;
 $gray-100: #f8f9fa !default;
 $gray-f2: #f2f2f2 !default;
@@ -34,6 +35,7 @@ $gray-85: #858587 !default;
 $gray-82: #828282 !default;
 $gray-71: #71779D !default;
 $gray-777: #777778 !default;
+$gray-72: #727272 !default;
 $gray-6c: #6C6C6D !default;
 $gray-600: #6c757d !default;
 $gray-666-66: #66666666 !default;
@@ -84,6 +86,7 @@ $grays: map-merge(
     "e2": $gray-e2,
     "71": $gray-71,
     "777": $gray-777,
+    "72": $gray-72,
     "700": $gray-700,
     "800": $gray-800,
     "22": $gray-22,
@@ -123,6 +126,7 @@ $orange-dark:  #A33E22 !default;
 $yellow-ed:  #706b68 !default;
 $yellow-ff:  #FFC300 !default;
 $yellow:  #F2C94C !default;
+$gold:  #CC982B !default;
 $green-7d:   #7DC50A !default;
 $green-6c:   #6CA400 !default;
 $green-85:   #85C50A !default;
@@ -150,6 +154,7 @@ $colors: map-merge(
     "orange-f9":     $orange-f9,
     "orange-e9-o05":     $orange-e9-o05,
     "orange-e9":     $orange-e9,
+    "gold":     $gold,
     "yellow":     $yellow,
     "yellow-ed":     $yellow-ed,
     "orange-light":     $orange-light,
@@ -181,6 +186,7 @@ $colors: map-merge(
     "gray-a7":       $gray-a7,
     "gray-22":       $gray-22,
     "gray-777":       $gray-777,
+    "gray-72":       $gray-72,
     "gray-25":       $gray-25,
     "gray-33":       $gray-33,
     "gray-31":       $gray-31,
@@ -213,6 +219,7 @@ $theme-colors: map-merge(
     "purple":    $purple,
     "green-7d":    $green-7d,
     "green-85":    $green-85,
+    "gold":     $gold,
     "yellow":    $yellow,
     "yellow-ed":    $yellow-ed,
     "red-ff":        $red-ff,
@@ -231,6 +238,7 @@ $theme-colors: map-merge(
     "gray-b7": $gray-b7,
     "gray-71": $gray-71,
     "gray-777": $gray-777,
+    "gray-72": $gray-72,
     "gray-a7": $gray-a7,
     "gray-6c": $gray-6c,
     "gray-33": $gray-33,
@@ -580,7 +588,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   1070: 1070px,
-  xl: 1201px
+  xl: 1201px,
+  xxl: 1920px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -595,7 +604,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px
+  xl: 1200px,
+  xxl: 1760px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");

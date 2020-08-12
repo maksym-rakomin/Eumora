@@ -28,7 +28,6 @@
 /*плагин mmenu*/
 //= lib/mhead.js
 //= lib/slinky.min.js
-//= mmenu.js
 
 /* кастомный селект */
 //= lib/select2.min.js
