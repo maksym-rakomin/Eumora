@@ -68032,6 +68032,27 @@ body.compensate-for-scrollbar {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
+.btn-white {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 123%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #CC982B;
+  background: #fff;
+  border: 1px solid #CC982B;
+  display: inline-block;
+  padding: 12px 24px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .btn-white:hover {
+    color: #fff;
+    background: #CC982B;
+    text-decoration: none; }
+
 .baner__title {
   font-size: 1rem;
   text-align: center; }
@@ -68446,8 +68467,71 @@ body.compensate-for-scrollbar {
       width: 100%;
       height: 100%; }
 
-.footer {
-  min-height: 500px; }
+.favourites {
+  background: #fff;
+  padding: 24px 16px;
+  color: #000; }
+  .favourites__title {
+    font-family: Gothic, serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 133%;
+    text-align: center;
+    margin-bottom: 24px; }
+  .favourites__product {
+    position: relative;
+    padding: 40px 10px 44px;
+    background: #fff;
+    border: 1px solid #F4F1EA;
+    margin-bottom: 60px;
+    width: 100%; }
+  .favourites__img-wrap {
+    width: 152px;
+    height: 164px;
+    margin: 0 auto 40px; }
+  .favourites__img {
+    width: 100%;
+    height: auto;
+    max-height: 100%; }
+  .favourites__product-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4px; }
+  .favourites__product-sort {
+    font-size: 1.3rem;
+    line-height: 123%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px; }
+  .favourites__price {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .favourites__price * {
+      margin: 0 8px; }
+    .favourites__price-sale {
+      -webkit-text-decoration-line: line-through;
+      text-decoration-line: line-through; }
+  .favourites__btn {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -68752,7 +68836,10 @@ input[type="search"]::-webkit-search-results-decoration {
       align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%;
+      max-width: 1328px;
+      margin: 0 auto; }
     .promo__subtitle {
       font-size: 16px;
       line-height: 125%; }
@@ -68765,4 +68852,48 @@ input[type="search"]::-webkit-search-results-decoration {
     .promo__devider {
       width: 119px;
       height: 80px;
-      margin: 0 60px; } }
+      margin: 0 60px; }
+  .favourites {
+    padding: 20px 16px 96px;
+    color: #000; }
+    .favourites__wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1328px;
+      margin: 0 auto; }
+    .favourites__title {
+      font-size: 2.4rem;
+      line-height: 125%;
+      margin-bottom: 40px; }
+    .favourites__product {
+      position: relative;
+      padding: 64px 10px 44px;
+      margin-bottom: 20px;
+      margin-right: 16px;
+      width: 32.6%; }
+      .favourites__product:last-of-type {
+        margin-right: 0px; }
+    .favourites__img-wrap {
+      width: 216px;
+      height: 232px;
+      margin: 0 auto 64px; }
+    .favourites__img {
+      width: 100%;
+      height: auto;
+      max-height: 100%; }
+    .favourites__btn {
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); } }
