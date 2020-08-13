@@ -10690,3 +10690,31 @@ $(document).ready(function () {
     ],
   });
 });
+
+// слик слайдер advantages
+$(document).ready(function () {
+  $("#advantages-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    arrows: false,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 9999,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});

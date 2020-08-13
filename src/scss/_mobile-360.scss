@@ -18,6 +18,26 @@
     box-shadow: none;
   }
 }
+.btn-white {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 123%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gold;
+  background: $white;
+  border: 1px solid $gold;
+  display: inline-block;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $white;
+    background: $gold;
+    text-decoration: none;
+  }
+}
 
 .baner {
   &__title {
@@ -399,6 +419,112 @@
   }
 }
 
+.favourites {
+  background: $white;
+  padding: 24px 16px;
+  color: $black;
+
+  &__title {
+    font-family: Gothic, serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 133%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__product {
+    position: relative;
+    padding: 40px 10px 44px;
+    background: $white;
+    border: 1px solid $white-f4;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  &__img-wrap {
+    width: 152px;
+    height: 164px;
+    margin: 0 auto 40px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  &__product-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  &__product-sort {
+    font-size: 1.3rem;
+    line-height: 123%;
+    text-align: center;
+    color: fade-out($black, 0.5);
+    margin-bottom: 16px;
+  }
+  &__price {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    * {
+      margin: 0 8px;
+    }
+    &-sale {
+      text-decoration-line: line-through;
+    }
+  }
+  &__btn {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%, 0);
+  }
+}
+
+.advantages {
+  background: $blue-aa;
+  
+  &__card-wrap {
+    padding: 32px;
+    background: $blue-aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 40px;
+    margin-right: 16px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: fade-out($black, 0.5);
+    width: 35.1%;
+  }
+  &__slider {
+    width: 100%;
+    max-width: 1328px;
+    margin: 0 auto;
+  }
+}
+
 .footer {
-  min-height: 500px; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // min-height: 500px;
 }
