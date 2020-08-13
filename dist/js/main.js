@@ -9495,7 +9495,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 //         $('.recommendations').on("keypress", ".quantity-num", function(event) {
 //             event = event || window.event;
-            
+
 //             if (event.charCode && event.charCode!=0 && (event.charCode < 48 || event.charCode > 57) )
 //                 return false;
 //         });
@@ -9517,7 +9517,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 //         // $('.recommendations').on({keypress: function(event) {
 //         //     event = event || window.event;
-            
+
 //         //     if (event.charCode && event.charCode!=0 && (event.charCode < 48 || event.charCode > 57) )
 //         //         return false;
 //         // }, blur:  function(event) {
@@ -9540,7 +9540,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //         }
 // });
 // // данное решение обусловленно тем что, JQuery не работает с динамически созданными элементами, а здесь мы имеем как раз такой случай,
-// // т.к. при инициализации slick slider он клонирует все элементы, при этом для события "blur" не работает распространение события, 
+// // т.к. при инициализации slick slider он клонирует все элементы, при этом для события "blur" не работает распространение события,
 // // поэтому и пришлось прибегнуть к данному решению - написать на чистом JS
 // document.querySelectorAll('.recommendations .quantity-num').forEach(item => {
 //         item.addEventListener('blur', function(event) {
@@ -9550,8 +9550,6 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //             }
 //     })
 // })
-
-
 
 // // слик слайдер на главной странице
 // $(document).ready(function () {
@@ -9933,7 +9931,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //         if ($(this).find('.lists-change').hasClass('show')) {
 //             $(this).find('.lists-change').removeClass('show')
 //         }
-        
+
 //     })
 // });
 
@@ -10093,7 +10091,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 // // Добавление фирмы в фильтр
 // $(document).ready(function () {
 //     function createElement(html, id) {
-//         return `<span class="filtered-company d-inline-block border rounded-lg bg-white 
+//         return `<span class="filtered-company d-inline-block border rounded-lg bg-white
 //     p-7 pr-30 mr-08 mb-08 bg-gray-fe" data-company="${id}">${html}</span>`;
 //     }
 
@@ -10284,13 +10282,12 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //     const nodeStatus = document.querySelectorAll(".recommendations .animate__animated");
 //     const nodeHide = document.querySelectorAll(".recommendations .hide");
 //     let heightAnimateBlock = null;
-    
 
 //     if (getViewWidth(576)) {
 //         nodeHide.forEach((elem) => {
 //             elem.classList.remove("hide");
 //         });
-//     }    
+//     }
 
 //     if (parentNode) {
 //         heightAnimateBlock = getCoords(parentNode);
@@ -10301,10 +10298,10 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //         this.classList.remove(`animate__animated`, `animate__fadeInLeft`);
 //         this.removeEventListener("animationend", handleAnimationEnd);
 //     }
-    
+
 //     function handleAnimationStart() {
 //         if (window.pageYOffset >= heightAnimateBlock.top - percentHeightAnimateBlock(parentNode, 50) && !getViewWidth(576)) {
-            
+
 //             nodeCard.forEach((elem) => {
 //                 elem.classList.add("animate__animated", "animate__fadeInLeft");
 //             });
@@ -10393,7 +10390,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 //     if (document.getElementById('about__toggle')) {
 //         const parentNode = document.getElementById('about');
-        
+
 //         document.getElementById('about__toggle').addEventListener('click', (e) => {
 //             e.preventDefault();
 //             parentNode.classList.toggle('show');
@@ -10401,7 +10398,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //     }
 // })();
 
-// // Открытие меню в footer на больших экранах 
+// // Открытие меню в footer на больших экранах
 // ;(function (){
 //     "use strict";
 
@@ -10409,7 +10406,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 //     if (window.innerWidth >= 576) {
 //         collapseContentFooter.forEach(elem => {
-//             elem.removeAttribute('id'); 
+//             elem.removeAttribute('id');
 //             elem.classList.remove('collapse');
 //         })
 //     }
@@ -10427,7 +10424,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //             menuSection.forEach(element => {
 //                 element.classList.remove('active');
 //             });
-            
+
 //             event.currentTarget.classList.add('active');
 //         })
 //     })
@@ -10445,7 +10442,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //     targetElement.forEach(elem => {
 //         elem.addEventListener('click', (event) => {
 //             ++conutProductInBasket;
-            
+
 //             alertCountProduct.innerText = conutProductInBasket;
 //             body.classList.add('alert-in-basket-open');
 
@@ -10467,7 +10464,6 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //     let sideBarItemsBrands = document.querySelectorAll('.list-group--brands .other-list');
 //     let comparisonOtherSections = document.querySelectorAll('.list-group--comparison .other-list');
 //     // let comparisonOtherSections = document.querySelectorAll('.comparison-other-sections .other-list');
-    
 
 //     sideBarItems.forEach(element => {
 //         element.addEventListener('mouseover', (e) => {
@@ -10476,7 +10472,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //             }
 //         });
 
-//         element.addEventListener('mouseout', (e) => {           
+//         element.addEventListener('mouseout', (e) => {
 //             if (e.currentTarget.previousElementSibling && e.currentTarget.previousElementSibling.classList.contains('other-list')) {
 //                 e.currentTarget.previousElementSibling.classList.remove('non-border-bottom');
 //             }
@@ -10498,13 +10494,13 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 //     function addClassActive(selector) {
 
 //         selector.forEach(element => {
-            
+
 //             element.addEventListener('click', e => {
 //                 e.preventDefault();
-                
+
 //                 selector.forEach(elem => {
 //                     elem.classList.remove('non-border-bottom--click');
-                    
+
 //                     elem.classList.remove('list-group-item--active');
 //                     e.currentTarget.classList.add('list-group-item--active');
 //                 });
@@ -10588,7 +10584,7 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 // // target: $('.result'),
 // magnify: 2,
 // });
-  
+
 // // всплывающий попап при покупке серии
 // (function () {
 //     "use strict";
@@ -10612,43 +10608,85 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 // })();
 
-
 // окно мобильного меню
-(function() {
-    let toggle = document.querySelector('.header__toggle');
-    let body = document.querySelector('#body');
-    let overlay = document.querySelector('.header__overlay');
-    let mobileClose = document.querySelector('.header__mobile-close');
+(function () {
+  let toggle = document.querySelector(".header__toggle");
+  let body = document.querySelector("#body");
+  let overlay = document.querySelector(".header__overlay");
+  let mobileClose = document.querySelector(".header__mobile-close");
 
-    toggle.addEventListener('click', function(event) {
-        event.preventDefault();
-        body.classList.add("mobile-menu-show");
-    });
+  toggle.addEventListener("click", function (event) {
+    event.preventDefault();
+    body.classList.add("mobile-menu-show");
+  });
 
-    overlay.addEventListener('click', function(event) {
-        event.preventDefault();
-        body.classList.remove("mobile-menu-show");
-    });
+  overlay.addEventListener("click", function (event) {
+    event.preventDefault();
+    body.classList.remove("mobile-menu-show");
+  });
 
-    mobileClose.addEventListener('click', function(event) {
-        event.preventDefault();
-        body.classList.remove("mobile-menu-show");
-    });
-
+  mobileClose.addEventListener("click", function (event) {
+    event.preventDefault();
+    body.classList.remove("mobile-menu-show");
+  });
 })();
 
 // поиск на десктопе
-(function() {
-    let body = document.querySelector('#body');
-    let form = document.querySelector('.header__form');
+(function () {
+  let body = document.querySelector("#body");
+  let form = document.querySelector(".header__form");
 
-    body.addEventListener('click', function(event) {
-        event.preventDefault();
+  form.addEventListener("click", function (event) {
+    event.preventDefault();
 
-        if (event.target.classList.contains('open-search') || event.target.classList.contains('header__input-search')) {
-            body.classList.add("search-show");
-        } else {
-            body.classList.remove("search-show");
-        }
-    });
+    if (
+      event.target.classList.contains("open-search") ||
+      event.target.classList.contains("header__input-search")
+    ) {
+      body.classList.add("search-show");
+    } else {
+      body.classList.remove("search-show");
+    }
+  });
 })();
+
+// прилипающий header
+$(document).ready(function () {
+  if ($(window).width() < 768) {
+    $(window).scroll(function () {
+      if ($(window).scrollTop() >= 32) {
+        $(".header__title").addClass("fixed");
+      } else {
+        $(".header__title").removeClass("fixed");
+      }
+    });
+  }
+});
+
+// слик слайдер на главной странице
+$(document).ready(function () {
+  $(".main-slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    arrows: false,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 9999,
+        settings: {
+          arrows: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+});
