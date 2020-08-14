@@ -489,7 +489,7 @@
 
 .advantages {
   background: $blue-aa;
-  
+
   &__card-wrap {
     padding: 32px;
     background: $blue-aa;
@@ -525,6 +525,69 @@
   }
 }
 
-.footer {
-  // min-height: 500px;
+.posts {
+  background: $white;
+  padding: 64px 16px 1px;
+  &__wrap {
+    max-width: 1328px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    margin-bottom: 90px;
+  }
+  &__img-wrap {
+    width: 100%;
+    height: auto;
+    margin-bottom: 56px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  &__body {
+    padding: 0 24px 60px;
+    border: 1px solid $white-f4;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  &__title {
+    font-family: Gothic, serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 133%;
+    text-align: center;
+    color: $black;
+    width: 80%;
+    min-height: 2.56em;
+    position: relative;
+    background: $white;
+    left: 50%;
+    top: -1em;
+    transform: translateX(-50%);
+    padding: 0 20px;
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-align: center;
+    color: $black;
+  }
+  &__output {
+    font-size: 1.3rem;
+    line-height: 123%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 16px;
+    color: fade-out($black, .5);
+  }
+  &__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+  }
 }

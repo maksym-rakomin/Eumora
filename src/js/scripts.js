@@ -1210,7 +1210,7 @@ $(document).ready(function () {
     speed: 1500,
     slidesToShow: 1,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 9999,
