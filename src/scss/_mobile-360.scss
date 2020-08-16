@@ -1,47 +1,54 @@
 .btn {
   font-family: Arial, sans-serif;
-  font-size: 1.6rem;
-  line-height: 125%;
-  text-transform: uppercase;
-  color: $white;
-  padding: 17px 58px;
-  background: $gold;
-  border: 1px solid $gold;
-  transform: all 0.3s ease;
-
-  &:hover {
-    color: $gold;
-    background: $white;
-  }
-
-  &:focus,
-  &.focus {
-    outline: 0;
-    box-shadow: none;
-  }
-}
-
-.btn-white {
-  font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 123%;
   text-align: center;
   text-transform: uppercase;
-  color: $gold;
-  background: $white;
+  color: $white;
+  background: $gold;
   border: 1px solid $gold;
   display: inline-block;
   padding: 12px 24px;
   transition: all 0.3s ease;
 
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
   &:hover {
-    color: $white;
-    background: $gold;
+    color: $gold;
+    background: $white;
     text-decoration: none;
   }
+
+  &--title {
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: $white;
+    padding: 17px 58px;
+    background: $gold;
+
+    &:hover {
+      color: $gold;
+      background: $white;
+    }
+  }
+
+  &--white {
+    color: $gold;
+    background: $white;
+
+    &:hover {
+      color: $white;
+      background: $gold;
+    }
+  }
 }
+
 
 .baner {
   &__title {
@@ -724,5 +731,95 @@
       left: 0;
       top: 0;
     }
+  }
+}
+
+.review {
+  padding: 64px 16px 4px;
+  font-family: Arial, sans-serif;
+  color: $black;
+  text-align: center;
+
+  &__card {
+    margin-bottom: 60px;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-family: Gothic, serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 133%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-size: 1.3rem;
+    line-height: 123%;
+    text-align: center;
+    text-transform: uppercase;
+    color: fade-out($black, .5);
+    margin-bottom: 32px;
+  }
+
+  &__body {
+    background: $white;
+    border: 2px solid $white-f4;
+    padding: 32px 24px 59px;
+    position: relative;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__date {
+    font-size: 1.3rem;
+    line-height: 123%;
+    color: fade-out($black, .5);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 17.4%;
+      height: 1px;
+      background: $white-f4;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 125%;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+
+    width: 120px;
+    text-align: center;
+  }
+  &__next {
+    display: none;
+  }
+
+  &__prev {
+    display: none;
   }
 }

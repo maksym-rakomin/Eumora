@@ -10718,3 +10718,41 @@ $(document).ready(function () {
     ],
   });
 });
+
+// слик слайдер review
+$(document).ready(function () {
+  $("#review__slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: $(`.review__next`),
+    prevArrow: $(`.review__prev`),
+    arrows: true,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 9999,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: "unslick",
+      },
+    ],
+  });
+
+  $("#review__slider").on("setPosition", function () {
+    let marginBottomCard = 20; //
+    $(this).find(".review__card").height("auto");
+    let slickTrack = $(this).find(".slick-track");
+    let slickTrackHeight = $(slickTrack).height() - marginBottomCard;
+    $(this)
+      .find(".review__card")
+      .css("height", slickTrackHeight + "px");
+  });
+});
