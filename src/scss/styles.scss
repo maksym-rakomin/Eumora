@@ -554,21 +554,22 @@ input[type="search"]::-webkit-search-results-decoration {
     font-family: Arial, sans-serif;
     color: $black;
     text-align: center;
-    
+
     &__wrap {
       width: 100%;
       max-width: 1328px;
       margin: 0 auto;
       position: relative;
     }
+
     &__slider {
       margin-left: -16px;
     }
-  
+
     &__card {
       margin-bottom: 20px;
       padding-left: 16px;
-  
+
       &:nth-child(n + 4) {
         display: block;
       }
@@ -577,19 +578,19 @@ input[type="search"]::-webkit-search-results-decoration {
     &__body {
       height: 100%;
     }
-  
+
     &__title {
       font-size: 2.4rem;
       line-height: 125%;
       text-align: center;
     }
-  
+
     &__subtitle {
       font-size: 1.6rem;
       line-height: 125%;
       margin-bottom: 40px;
-    }  
-  
+    }
+
     &__arrow {
       position: absolute;
       top: 50%;
@@ -616,6 +617,62 @@ input[type="search"]::-webkit-search-results-decoration {
       display: block;
     }
 
+
+  }
+
+
+  .save {
+    &__wrap {
+      width: 100%;
+      max-width: 1104px;
+      margin: 0 auto;
+    }
+
+    &__body {
+      padding: 87px 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__img-wrap {
+      display: block;
+      flex: 0 0 50%;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    &__content {
+      display: block;
+      flex: 0 0 50%;
+    }
+
+    &__title {
+      font-size: 4.8rem;
+      line-height: 125%;
+      margin-bottom: 8px;
+    }
+
+    &__subtitle {
+      font-size: 2.4rem;
+      line-height: 125%;
+      margin-bottom: 16px;
+    }
+
+    &__action {
+      font-family: Arial;
+      font-size: 1.6rem;
+      line-height: 125%;
+      text-align: center;
+      text-transform: uppercase;
+      color: fade-out($color: $black, $amount: .5);
+      margin-bottom: 24px;
+    }
 
   }
 

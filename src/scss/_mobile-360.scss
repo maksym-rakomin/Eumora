@@ -815,11 +815,63 @@
     width: 120px;
     text-align: center;
   }
+
   &__next {
     display: none;
   }
 
   &__prev {
     display: none;
+  }
+}
+
+.save {
+  padding: 94px 16px;
+  color: $black;
+  font-family: Gothic, serif;
+  text-align: center;
+  font-weight: 300;
+
+  // parallax
+  background-image: url('../img/save-bg.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__body {
+    padding: 68px 24px;
+    background: fade-out($white, $amount: .5);
+    border: 1px solid $white-f4;
+  }
+
+  &__img-wrap {
+    display: none;
+  }
+
+  &__title {
+    font-size: 4.8rem;
+    line-height: 125%;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-size: 2.4rem;
+    line-height: 125%;
+    margin-bottom: 16px;
+  }
+
+  &__action {
+    font-family: Arial;
+    font-size: 1.6rem;
+    line-height:  125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: fade-out($color: $black, $amount: .5);
+    margin-bottom: 24px;
+  }
+  &__btn {
+    min-width: 224px;
   }
 }

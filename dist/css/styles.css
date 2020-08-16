@@ -68750,6 +68750,43 @@ body.compensate-for-scrollbar {
   .review__prev {
     display: none; }
 
+.save {
+  padding: 94px 16px;
+  color: #000;
+  font-family: Gothic, serif;
+  text-align: center;
+  font-weight: 300;
+  background-image: url("../img/save-bg.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .save__body {
+    padding: 68px 24px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #F4F1EA; }
+  .save__img-wrap {
+    display: none; }
+  .save__title {
+    font-size: 4.8rem;
+    line-height: 125%;
+    margin-bottom: 8px; }
+  .save__subtitle {
+    font-size: 2.4rem;
+    line-height: 125%;
+    margin-bottom: 16px; }
+  .save__action {
+    font-family: Arial;
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 24px; }
+  .save__btn {
+    min-width: 224px; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -69261,4 +69298,51 @@ input[type="search"]::-webkit-search-results-decoration {
       display: block; }
     .review__prev {
       left: -70px;
-      display: block; } }
+      display: block; }
+  .save__wrap {
+    width: 100%;
+    max-width: 1104px;
+    margin: 0 auto; }
+  .save__body {
+    padding: 87px 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .save__img-wrap {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+  .save__img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .save__content {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+  .save__title {
+    font-size: 4.8rem;
+    line-height: 125%;
+    margin-bottom: 8px; }
+  .save__subtitle {
+    font-size: 2.4rem;
+    line-height: 125%;
+    margin-bottom: 16px; }
+  .save__action {
+    font-family: Arial;
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 24px; } }
