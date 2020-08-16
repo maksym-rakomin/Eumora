@@ -31,10 +31,12 @@ body {
 a,
 button {
   outline: none;
+
   &:focus {
     outline: none;
   }
 }
+
 input {
   &:focus {
     outline: none !important;
@@ -44,12 +46,14 @@ input {
 input[type="search"] {
   outline: none;
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+
 @media screen and (min-width: 769px) {
   .baner {
     &__title {
@@ -61,50 +65,62 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .header {
     background: $white;
+
     &__title {
       padding-top: 8px;
       box-shadow: none;
     }
+
     &__social {
       display: flex;
     }
+
     &__toggle-wrap {
       display: none;
     }
+
     &__search {
       display: block;
     }
+
     &__login {
       display: block;
     }
+
     &__logo {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     &__social {
       padding: 24px 0px;
     }
+
     &__social-lists {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 0;
     }
+
     &__social-list {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-right: 32px;
     }
+
     &__social-list:last-of-type {
       margin-right: 0px;
     }
+
     &__options {
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
+
     &__option-svg,
     .basket__svg {
       width: 24px;
@@ -116,6 +132,7 @@ input[type="search"]::-webkit-search-results-decoration {
       display: flex;
       align-items: center;
     }
+
     &__btn-form {
       border: none;
       background: transparent;
@@ -123,6 +140,7 @@ input[type="search"]::-webkit-search-results-decoration {
       padding: 0;
       right: 0px;
     }
+
     &__input-search {
       padding: 10px 0px;
       border-bottom: 1px solid $white-f4;
@@ -137,26 +155,32 @@ input[type="search"]::-webkit-search-results-decoration {
       right: 24px; // величина ширины кнопки
       transition: all 0.5s ease;
     }
+
     &__search::placeholder {
       color: fade-out($black, 0.5);
     }
+
     &__mobile-header {
       display: none;
     }
+
     &__mobile-social {
       display: none;
     }
+
     &__nav {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0px 0px 20px;
     }
+
     &__nav-lists {
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
     &__nav-link {
       padding: 4px 2px 4px;
       margin: 0px 18px;
@@ -166,12 +190,14 @@ input[type="search"]::-webkit-search-results-decoration {
       color: $black;
       transition: all 0.3s ease;
       border-bottom: 1px solid transparent;
+
       &:hover {
         color: $black;
         text-decoration: none;
         border-bottom-color: fade-out($black, 0.9);
       }
     }
+
     &__dropdown-item {
       padding: 10px 10px;
       font-size: 1.4rem;
@@ -189,9 +215,11 @@ input[type="search"]::-webkit-search-results-decoration {
       position: relative;
       right: 24px; // величина ширины кнопки
     }
+
     button.header__btn-form {
       z-index: 10;
     }
+
     a.header__btn-form {
       z-index: -1;
       visibility: hidden;
@@ -204,6 +232,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 25px;
     position: relative;
     margin-right: 8px; // величина смещения количества товаров в корзине
+
     &__count {
       position: absolute;
       top: -12px;
@@ -226,22 +255,27 @@ input[type="search"]::-webkit-search-results-decoration {
       height: 567px;
       background-image: url(../img/bg-main-slider.jpg);
     }
+
     &__text-content {
       margin-top: 72px;
       width: 30.3%;
     }
+
     &__title {
       font-size: 4.8rem;
       margin-bottom: 8px;
     }
+
     &__subtitle {
       margin-bottom: 40px;
     }
+
     &__img-wrap {
       bottom: 88px;
       width: 492px;
       height: 277px;
     }
+
     &__additional-img-wrap {
       display: flex;
       justify-content: center;
@@ -252,12 +286,14 @@ input[type="search"]::-webkit-search-results-decoration {
       right: 0px;
       bottom: 0px;
     }
+
     &__additional-img {
       max-width: 100%;
       max-height: 100%;
       width: auto;
       height: auto;
     }
+
     .slick-arrow {
       position: absolute;
       top: 50%;
@@ -272,10 +308,12 @@ input[type="search"]::-webkit-search-results-decoration {
       background-color: transparent;
       z-index: 5;
     }
+
     .slick-next {
       right: 1%;
       transform: rotate(180deg);
     }
+
     .slick-prev {
       left: 1%;
     }
@@ -285,6 +323,7 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 135px 16px 100px;
     background: $white;
     position: relative;
+
     &__title {
       font-size: 2.4rem;
       line-height: 125%;
@@ -292,6 +331,7 @@ input[type="search"]::-webkit-search-results-decoration {
       min-height: auto;
       top: 120px;
     }
+
     &__wrap {
       border: 1px solid $white-f4;
       padding-bottom: 64px;
@@ -303,18 +343,22 @@ input[type="search"]::-webkit-search-results-decoration {
       max-width: 1328px;
       margin: 0 auto;
     }
+
     &__subtitle {
       font-size: 16px;
       line-height: 125%;
     }
+
     &__text {
       font-size: 16px;
       line-height: 125%;
     }
+
     &__block {
       margin: 0;
       width: 18.2%;
     }
+
     &__devider {
       width: 119px;
       height: 80px;
@@ -340,26 +384,31 @@ input[type="search"]::-webkit-search-results-decoration {
       line-height: 125%;
       margin-bottom: 40px;
     }
+
     &__product {
       position: relative;
       padding: 64px 10px 44px;
       margin-bottom: 20px;
       margin-right: 16px;
       width: 32.6%;
+
       &:last-of-type {
         margin-right: 0px;
       }
     }
+
     &__img-wrap {
       width: 216px;
       height: 232px;
       margin: 0 auto 64px;
     }
+
     &__img {
       width: 100%;
       height: auto;
       max-height: 100%;
     }
+
     &__btn {
       position: absolute;
       left: 50%;
@@ -372,9 +421,11 @@ input[type="search"]::-webkit-search-results-decoration {
     &__card-wrap {
       padding: 44px;
     }
+
     &__text {
       width: 45.5%;
     }
+
     &__slider {
       width: 100%;
       max-width: 1328px;
@@ -392,6 +443,7 @@ input[type="search"]::-webkit-search-results-decoration {
       display: flex;
       justify-content: flex-end;
       min-height: 350px;
+
       &--revers {
         justify-content: flex-start;
 
@@ -400,15 +452,18 @@ input[type="search"]::-webkit-search-results-decoration {
             left: auto;
             right: 0px;
           }
+
           &__body {
             padding: 48px 210px 64px 110px;
           }
         }
       }
+
       &:last-of-type {
         margin-bottom: 0px;
       }
     }
+
     &__img-wrap {
       width: 49%;
       height: auto;
@@ -419,17 +474,20 @@ input[type="search"]::-webkit-search-results-decoration {
       left: 0px;
       z-index: 2;
     }
+
     &__img {
       width: 100%;
       height: auto;
       max-height: 100%;
       object-fit: cover;
     }
+
     &__body {
       flex: 0 0 57.83%;
       margin-top: 48px;
       padding: 48px 110px 64px 210px;
     }
+
     &__title {
       font-family: Gothic, serif;
       font-weight: 300;
@@ -443,17 +501,50 @@ input[type="search"]::-webkit-search-results-decoration {
       padding: 0;
       margin-bottom: 40px;
     }
+
     &__text {
       text-align: left;
     }
+
     &__output {
       margin-top: 20px;
       text-align: left;
     }
+
     &__btn {
       position: static;
       transform: translateX(0px);
       margin-top: 40px;
+    }
+  }
+
+
+  .video {
+    background: $blue-aa;
+
+    &__wrap {
+      padding: 64px 0px 0;
+      width: 100%;
+      max-width: 1328px;
+      margin: 0 auto;
+    }
+
+    &__devider {
+      width: 119px;
+      height: 80px;
+      margin: 0 auto 32px;
+
+    }
+
+    &__title {
+      font-size: 2.4rem;
+      line-height: 125%;
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+      line-height: 125%;
+      margin: 0px auto 40px;
     }
   }
 }
