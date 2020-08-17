@@ -16,21 +16,7 @@
 ///= bootstrap/scrollspy.js
 ///= bootstrap/toast.js
 
-/*плагин для переключения суб меню кликом*/
-//= lib/bootstrap-4-navbar.js
-
-/*плагин fancybox для увеличенного просмотра медиа*/
-//= lib/jquery.fancybox.min.js
-
-/*плагин автоизменения высоты <textarea>*/
-//= lib/autosize.js
-
-/*плагин mmenu*/
-//= lib/mhead.js
-//= lib/slinky.min.js
-
-/* кастомный селект */
-//= lib/select2.min.js
+//= lib/lazysizes.min.js
 
 /* просмотр карточки товара */
 //= lib/jquery.zoom.min.js
