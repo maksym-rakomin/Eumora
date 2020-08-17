@@ -68841,6 +68841,63 @@ body.compensate-for-scrollbar {
     -o-object-fit: cover;
     object-fit: cover; }
 
+.partners {
+  padding: 1px 16px 64px; }
+  .partners__title {
+    font-family: Gothic, serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 133%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 24px; }
+  .partners__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .partners__list {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: calc(100% / 3 - 6%);
+    margin: 0 1.5% 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .partners__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .partners__img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -69425,7 +69482,7 @@ input[type="search"]::-webkit-search-results-decoration {
       margin: 0 auto 64px;
       padding: 0 16px;
       background-color: #fff;
-      width: 16.9%;
+      min-width: 16.9%;
       position: relative;
       z-index: 2; }
     .instagram__list {
@@ -69452,4 +69509,78 @@ input[type="search"]::-webkit-search-results-decoration {
         -o-transition: opacity .3s ease-in-out;
         transition: opacity .3s ease-in-out; }
       .instagram__link:hover::after {
-        opacity: 1; } }
+        opacity: 1; }
+  .partners {
+    padding: 1px 16px 56px; }
+    .partners__title-wrap {
+      position: relative;
+      z-index: 2; }
+      .partners__title-wrap:after {
+        content: "";
+        display: block;
+        width: 65.6%;
+        height: 1px;
+        background-color: #F4F1EA;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 1; }
+    .partners__title {
+      font-size: 2.4rem;
+      line-height: 125%;
+      margin: 0 auto 30px;
+      padding: 0 16px;
+      background-color: #fff;
+      min-width: 16.9%;
+      position: relative;
+      z-index: 2; }
+    .partners__lists {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+    .partners__list {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 8.2%;
+      margin: 0 24px 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .partners__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .partners__img {
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; } }
