@@ -1163,12 +1163,12 @@
 
 // прилипающий header
 $(document).ready(function () {
-  if ($(window).width() < 768) {
+  if ($(window).width() < 992) {
     $(window).scroll(function () {
       if ($(window).scrollTop() >= 32) {
-        $(".header__title").addClass("fixed");
+        $(".header").addClass("fixed");
       } else {
-        $(".header__title").removeClass("fixed");
+        $(".header").removeClass("fixed");
       }
     });
   }
@@ -1192,7 +1192,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
           arrows: false,
           dots: true,
@@ -1251,7 +1251,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 991,
         settings: "unslick",
       },
     ],

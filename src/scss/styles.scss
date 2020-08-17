@@ -54,7 +54,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .baner {
     &__title {
       font-size: 1.6rem;
@@ -162,6 +162,17 @@ input[type="search"]::-webkit-search-results-decoration {
       color: $gray-99;
     }
 
+    &__menu {
+      padding: 0px;
+      position: static;
+      width: 100%;
+      transform: translateX(0px);
+    }
+
+    &__menu-container {
+      padding: 0;
+    }
+
     &__mobile-header {
       display: none;
     }
@@ -174,19 +185,20 @@ input[type="search"]::-webkit-search-results-decoration {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0px 0px 20px;
+      padding: 0px;
     }
 
     &__nav-lists {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0px;
     }
 
     &__nav-link {
       padding: 4px 2px 4px;
       margin: 0px 18px;
-      font-size: 16px;
+      font-size: 1.4rem;
       line-height: 125%;
       text-transform: uppercase;
       color: $black;
@@ -264,7 +276,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 
     &__title {
-      font-size: 4.8rem;
+      font-size: 3.8rem;
       margin-bottom: 8px;
     }
 
@@ -456,7 +468,7 @@ input[type="search"]::-webkit-search-results-decoration {
           }
 
           &__body {
-            padding: 48px 210px 64px 110px;
+            padding: 48px 110px 64px 110px;
           }
         }
       }
@@ -487,7 +499,9 @@ input[type="search"]::-webkit-search-results-decoration {
     &__body {
       flex: 0 0 57.83%;
       margin-top: 48px;
-      padding: 48px 110px 64px 210px;
+      padding: 48px 110px 64px;
+     
+
     }
 
     &__title {
@@ -820,6 +834,7 @@ input[type="search"]::-webkit-search-results-decoration {
     &__title {
       text-align: left;
     }
+
     &__text {
       text-align: left;
     }
@@ -894,6 +909,7 @@ input[type="search"]::-webkit-search-results-decoration {
       justify-content: center;
       align-items: center;
       margin: 0 16px 0 0;
+
       &:last-of-type {
         margin: 0;
       }
@@ -932,4 +948,41 @@ input[type="search"]::-webkit-search-results-decoration {
       text-align: center;
     }
   }
+}
+
+@media screen and (min-width: 769px) {
+  .main-slider__slide {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .main-slider {
+    &__title {
+      font-size: 4.8rem;
+    }
+  }
+
+  .posts {
+    background: $white;
+    padding: 120px 0px;
+
+    &__body {
+      flex: 0 0 57.83%;
+      margin-top: 48px;
+      padding:  48px 110px 64px 210px;
+    }
+    &__card {
+      &--revers {
+        padding: 48px 210px 64px 110px;
+      }
+    }
+  }
+  .header {
+    &__nav-link {
+      font-size: 1.6rem;
+    }
+  }
+
 }
