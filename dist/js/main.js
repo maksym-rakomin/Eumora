@@ -10228,6 +10228,7 @@ $(document).ready(function () {
 });
 
 // слик слайдер advantages
+// также используется в карточке товара
 $(document).ready(function () {
   $("#advantages-slider").slick({
     dots: false,
@@ -10235,7 +10236,7 @@ $(document).ready(function () {
     speed: 1500,
     slidesToShow: 1,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 9999,
@@ -10291,4 +10292,101 @@ $(document).ready(function () {
       .find(".review__card")
       .css("height", slickTrackHeight + "px");
   });
+});
+// слик слайдеры в карточке товара
+$(document).ready(function () {
+  $(".product__showing-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".product__slider",
+    dots: false,
+    infinite: false,
+    autoplay: false,
+
+    responsive: [
+      {
+        breakpoint: 9999,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: "unslick",
+      },
+    ],
+  });
+
+  $(".product__slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".product__showing-slider",
+    dots: false,
+    focusOnSelect: true,
+    infinite: false,
+    arrows: false,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 9999,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          asNavFor: null,
+        },
+      },
+    ],
+  });
+
+  $(".product__showing-slider .product__showing-slide-wrap").zoom({
+    magnify: 4,
+  });
+});
+
+//изменеие количества товаров
+$(document).ready(function () {
+  $(".product").on("click", ".quantity__minus", quantityMinus);
+  $(".product").on("click", ".quantity__plus", quantityPlus);
+
+  $(".product").on("keypress", ".quantity__input", function (event) {
+    event = event || window.event;
+
+    if (
+      event.charCode &&
+      event.charCode != 0 &&
+      (event.charCode < 48 || event.charCode > 57)
+    )
+      return false;
+  });
+
+  $(".product").on("blur", ".quantity__input", function (event) {
+    if ($(this)[0].value == "") {
+      $(this)[0].value = 0;
+    }
+  });
+
+  function quantityMinus(event) {
+    event.preventDefault();
+    const inputNumber = $(this).closest(".quantity").find(".quantity__input");
+    if (inputNumber.val() > 1) {
+      inputNumber.val(+inputNumber.val() - 1);
+    }
+  }
+
+  function quantityPlus(event) {
+    event.preventDefault();
+    const inputNumber = $(this).closest(".quantity").find(".quantity__input");
+    inputNumber.val(+inputNumber.val() + 1);
+  }
 });
