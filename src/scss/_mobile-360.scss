@@ -514,6 +514,12 @@
     margin: 0 auto 60px;
     width: 100%;
     max-width: 432px;
+
+    &.sale {
+      .favourites__price-sale {
+        display: block;
+      }
+    }
   }
 
   &__img-wrap {
@@ -559,6 +565,7 @@
 
     &-sale {
       text-decoration-line: line-through;
+      display: none;
     }
   }
 
@@ -835,6 +842,37 @@
 
   &__prev {
     display: none;
+  }
+
+  &__rating-lists {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0px;
+
+  }
+
+  &__rating-list {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $gray-сc;
+    }
+
+    &.gold {
+      svg {
+        fill: $gold;
+      }
+    }
   }
 }
 
@@ -1152,7 +1190,7 @@
 .product {
   padding: 0;
   font-family: Arial, sans-serif;
-  
+
   &__card {
     padding: 30px 0;
     max-width: 1328px;
@@ -1344,6 +1382,13 @@
     svg {
       width: 100%;
       height: 100%;
+      fill: $gray-сc;
+    }
+
+    &.gold {
+      svg {
+        fill: $gold;
+      }
     }
   }
 
@@ -1572,4 +1617,78 @@
     color: $black;
   }
 
+}
+
+
+.slogan {
+  padding: 50px 16px 63px;
+  background: $white;
+  position: relative;
+
+  &__wrap {
+    border: 1px solid $white-f4;
+    padding-top: 56px;
+  }
+
+  &__img-wrap {
+    width: 76px;
+    height: 54px;
+    margin: 0 auto 16px;
+
+    svg {
+      margin: 0 auto;
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: Gothic, serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 133%;
+    text-align: center;
+    color: $black;
+    width: 56%;
+    // min-height: 46px;
+    margin: 0 auto;
+    background: $white;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%);
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: $black;
+  }
+
+  &__block {
+    margin: 0 auto 32px;
+    width: 85.9%;
+  }
+
+  &__devider {
+    width: 71px;
+    height: 48px;
+    margin: 0 auto 32px;
+
+    * {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

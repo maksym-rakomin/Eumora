@@ -54,6 +54,47 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+
+@media screen and (min-width: 700px) {
+  .slogan {
+    &__title {
+      width: 43%;
+      top: 29px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main-slider__slide {
+    height: 500px;
+  }
+
+  .product {
+    &__showing-slider {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    &__showing-slide-wrap {
+      width: 60%;
+      position: relative;
+      padding-bottom: 60%;
+      overflow: hidden;
+      height: 0;
+      margin: 0 auto;
+    }
+
+    &__showing-slide-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   .baner {
     &__title {
@@ -344,8 +385,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .promo {
     padding: 135px 16px 100px;
-    background: $white;
-    position: relative;
 
     &__title {
       font-size: 2.4rem;
@@ -578,6 +617,10 @@ input[type="search"]::-webkit-search-results-decoration {
     color: $black;
     text-align: center;
 
+    &--star {
+      padding-bottom: 100px;
+    }
+
     &__wrap {
       width: 100%;
       max-width: 1328px;
@@ -587,6 +630,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
     &__slider {
       margin-left: -16px;
+
+      &-star {
+        margin-bottom: 40px;
+      }
     }
 
     &__card {
@@ -596,16 +643,34 @@ input[type="search"]::-webkit-search-results-decoration {
       &:nth-child(n + 4) {
         display: block;
       }
+
+      &--star {
+        flex: 1 0 30%;
+        position: relative;
+        padding: 0;
+        margin: 0 16px 0 0;
+
+        &:last-of-type {
+          margin: 0;
+        }
+      }
     }
 
     &__body {
       height: 100%;
+      &--star {
+        padding: 32px 24px 92px;
+      }
     }
 
     &__title {
       font-size: 2.4rem;
       line-height: 125%;
       text-align: center;
+
+      &--star {
+        margin-bottom: 40px;
+      }
     }
 
     &__subtitle {
@@ -638,6 +703,24 @@ input[type="search"]::-webkit-search-results-decoration {
     &__prev {
       left: -70px;
       display: block;
+    }
+
+    &__slider-star {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    &__rating-lists {
+      position: absolute;
+      bottom: 32px;
+      left: 0px;
+      right: 0px;
+    }
+
+    &__rating-list {
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -727,6 +810,7 @@ input[type="search"]::-webkit-search-results-decoration {
       min-width: 16.9%;
       position: relative;
       z-index: 2;
+      display: block;
     }
 
     &__list {
@@ -745,7 +829,7 @@ input[type="search"]::-webkit-search-results-decoration {
         bottom: 0;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: $gray-99;
+        background-color: fade-in($color: $black, $amount: .5);
         background-image: url(../img/instagram-logo.svg);
         background-size: 30px 30px;
         z-index: 2;
@@ -755,7 +839,7 @@ input[type="search"]::-webkit-search-results-decoration {
       }
 
       &:hover::after {
-        opacity: 1;
+        opacity: .5;
       }
     }
   }
@@ -791,6 +875,7 @@ input[type="search"]::-webkit-search-results-decoration {
       min-width: 16.9%;
       position: relative;
       z-index: 2;
+      display: block;
     }
 
     &__lists {
@@ -855,7 +940,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 
     &__email {
-      padding: 20px;
+      padding: 18px;
     }
 
     &__btn {
@@ -952,6 +1037,13 @@ input[type="search"]::-webkit-search-results-decoration {
     &__card {
       padding: 42px 0;
       display: flex;
+
+      &.sale::after {
+        width: 88px;
+        height: 88px;
+        top: 50px;
+        font-size: 1.6rem;
+      }
     }
 
     &__view {
@@ -1058,29 +1150,6 @@ input[type="search"]::-webkit-search-results-decoration {
       padding: 32px 0 24px;
     }
 
-    // &__form {
-    //   display: flex;
-    //   justify-content: flex-start;
-    //   align-items: center;
-    // }
-
-    // &__quantity {
-    //   margin: 0 24px 0 0;
-    // }
-
-    // &__btn-card {
-    //   width: 33.7%;
-    //   padding: 18px;
-    //   font-size: 1.6rem;
-    //   margin: 0 24px 0 0;
-    // }
-
-    // &__btn-buy {
-    //   width: 33.7%;
-    //   padding: 18px;
-    //   font-size: 1.6rem;
-    // }
-
     &__delivery {
       padding: 16px 33px 16px 47px;
       align-items: center;
@@ -1115,37 +1184,60 @@ input[type="search"]::-webkit-search-results-decoration {
       }
     }
   }
-}
 
-@media screen and (min-width: 769px) {
-  .main-slider__slide {
-    height: 500px;
-  }
+  .slogan {
+    padding: 120px 16px;
 
-  .product {
-    &__showing-slider {
-      display: block;
-      margin-bottom: 16px;
+    &__title {
+      font-size: 2.4rem;
+      line-height: 125%;
+      min-height: auto;
+      width: 49%;
+      top: 105px;
     }
 
-    &__showing-slide-wrap {
-      width: 60%;
-      position: relative;
-      padding-bottom: 60%;
-      overflow: hidden;
-      height: 0;
+    &__wrap {
+      border: 1px solid $white-f4;
+      padding-bottom: 68px;
+      padding-top: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1328px;
       margin: 0 auto;
     }
 
-    &__showing-slide-img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      object-fit: cover;
+
+    &__img-wrap {
+      width: 95px;
+      height: 80px;
+      margin: 0 auto 24px;
+
+      svg {
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+      }
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &__block {
+      margin: 0 25px;
+      width: 21.7%;
     }
   }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1220,6 +1312,13 @@ input[type="search"]::-webkit-search-results-decoration {
 
     &__advantages .advantages__card-wrap {
       padding: 24px 20px;
+    }
+  }
+
+  .slogan {
+    &__title {
+      width: 33%;
+      top: 100px;
     }
   }
 
