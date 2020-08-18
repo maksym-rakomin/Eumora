@@ -1,15 +1,6 @@
 @import "bootstrap/bootstrap";
-@import "variables";
-@import "mixins";
-@import "lib/_bootstrap-4-navbar";
 @import "lib/slick";
-@import "lib/jquery.fancybox"; // Компилятор scss не хотел понимать значение локальной переменной env() и я его убрал
 @import "fonts";
-@import "lib/animate.min";
-@import "animation";
-@import "lib/mhead";
-@import "lib/_slinky.min";
-@import "lib/select2.min";
 
 @import "_mobile-360";
 
@@ -449,7 +440,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
     &__product {
       position: relative;
-      padding: 64px 10px 44px;
       margin-bottom: 20px;
       margin-right: 16px;
       width: 32.6%;
@@ -460,16 +450,10 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 
     &__img-wrap {
-      width: 216px;
-      height: 232px;
+      height: 270px;
       margin: 0 auto 64px;
     }
 
-    &__img {
-      width: 100%;
-      height: auto;
-      max-height: 100%;
-    }
 
     &__btn {
       position: absolute;
@@ -619,6 +603,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
     &--star {
       padding-bottom: 100px;
+      .review__btn {
+        display: none;
+      }
     }
 
     &__wrap {
@@ -639,6 +626,7 @@ input[type="search"]::-webkit-search-results-decoration {
     &__card {
       margin-bottom: 20px;
       padding-left: 16px;
+      padding-right: 1px;
 
       &:nth-child(n + 4) {
         display: block;
@@ -658,6 +646,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
     &__body {
       height: 100%;
+
       &--star {
         padding: 32px 24px 92px;
       }
@@ -722,6 +711,15 @@ input[type="search"]::-webkit-search-results-decoration {
       width: 28px;
       height: 28px;
     }
+
+    &__btn {
+      
+
+      &--show {
+        display: inline-block;
+      }
+    }
+
   }
 
   .save {
@@ -1046,11 +1044,6 @@ input[type="search"]::-webkit-search-results-decoration {
       }
     }
 
-    &__view {
-      flex: 0 0 50%;
-      width: 50%;
-      padding: 0 16px;
-    }
 
     &__showing-slider {
       display: block;
@@ -1113,11 +1106,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 
-    &__description {
-      padding: 24px 0 0;
-      flex: 0 0 50%;
-      width: 50%;
-    }
 
     &__header {
       padding: 0;
